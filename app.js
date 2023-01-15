@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const url = `mongodb+srv://iqbal:database123@cluster0.qofpz.mongodb.net/app?retryWrites=true&w=majority`;
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000
+require('dotenv').config()
+const port = process.env.PORT
 
 app.use(express.json());
 
