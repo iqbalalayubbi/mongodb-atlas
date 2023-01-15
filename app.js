@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 const url = `mongodb+srv://iqbal:database123@cluster0.qofpz.mongodb.net/app?retryWrites=true&w=majority`;
 const express = require('express');
 const app = express();
+var util= require('util');
+var encoder = new util.TextEncoder('utf-8');
 require('dotenv').config()
 const port = process.env.PORT
 
