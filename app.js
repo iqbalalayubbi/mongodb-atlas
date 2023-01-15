@@ -26,7 +26,8 @@ const User = mongoose.model('user',{
 });
 
 app.get('/',(req,res) => {
-    User.find().then(result => res.json(result))
+    res.send('hello world')
+    // User.find().then(result => res.json(result))
 })
 
 app.listen(port,() => console.log('server is running'))
